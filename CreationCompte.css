@@ -1,0 +1,153 @@
+
+
+main {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-color: #e3f2fd;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+form p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+form button {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin: 10px 15px 15px;
+    cursor: pointer;
+}
+
+form button:active {
+    transform: scale(0.95);
+}
+
+form button:focus {
+    outline: none;
+}
+
+form button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+form {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    margin: 12%;
+    position: relative;
+   
+    
+}
+
+form a {
+    list-style: none;
+}
+
+form input, select {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+select {
+    border-radius: 4px; /* Ajouter un arrondi aux select */
+}
+
+.form-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.LostPassword, .create, .Back {
+    flex: 1;
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 12px 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 15px 15px; /* Espacement entre les boutons */
+}
+
+.create {
+    margin-top: 10px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+    }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .search-bar, .header-links-container {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .search-bar {
+        flex: 1;
+        order: 1;
+    }
+
+    .header-links-container {
+        order: 2;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+
+    .header-links {
+        margin: 5px 0;
+    }
+
+    form {
+        padding: 20px;
+    }
+}

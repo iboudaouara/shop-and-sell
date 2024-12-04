@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Application Shop and Sell</string>
+    <string name="shop_sell"><![CDATA[SHOP & SELL]]></string>
+    <string name="img_5">TODO</string>
+    <string name="shop">SHOP</string>
+    <string name="sell">SELL</string>
+    <string name="_0_00">0.00$</string>
+
+    <string name="sorting_prompt">Filtre</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="email">E-mail</string>
+    <string name="inscription">Inscription</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="confirmer_mot_de_passe">Confirmer Mot de passe</string>
+    <string name="s_inscrire">S\'inscrire</string>
+    <string name="btnutilisateur">btnUtilisateur</string>
+    <string name="btnajouter">btnAjouter</string>
+    <string name="btnaccueil">btnAccueil</string>
+    <string name="logoshopsell">LogoShopSell</string>
+    <string name="numero_de_telephone">Numéro de téléphone</string>
+    <string name="confirmer_mes_choix">Confirmer mes choix</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="creer_un_compte">Créer un compte</string>
+    <string name="aide">Aide</string>
+    <string name="a_propos">À propos</string>
+    <string name="contactez_nous">Contactez-nous</string>
+
+    <string-array name="sorting_options">
+        <item>-- Trier --</item>
+        <item>Trier par nom</item>
+        <item>Trier par prix (asc)</item>
+        <item>Trier par prix (desc)</item>
+        <item>Trier par date</item>
+        <item>-- Catégories --</item>
+        <item>Électronique</item>
+        <item>Vêtements</item>
+        <item>Sport</item>
+        <item>Éducation</item>
+        <item>Accessoires</item>
+        <item>Décorations</item>
+        <item>Santé et beauté</item>
+    </string-array>
+
+    <string-array name="questions_securite_1">
+        <item>Choisir la question de sécurité 1</item>
+        <item>Quel est le nom de premier animal de compagnie?</item>
+        <item>Quel est le nom de jeune fille de votre mère?</item>
+        <item>Quel est votre film préféré?</item>
+    </string-array>
+
+    <string-array name="questions_securite_2">
+        <item>Choisir la question de sécurité 2</item>
+        <item>Quel est le nom de votre école primaire?</item>
+        <item>Quel est le nom de votre meilleur ami d\'enfance?</item>
+        <item>Quel est le modèle de votre première voiture?</item>
+    </string-array>
+
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="logo_de_shop_and_sell">Logo de Shop and Sell</string>
+    <string name="scroll_horizontal_categories_boutons">Scroll horizontal qui contient tous les boutons des catégories d\'articles.</string>
+
+    <string-array name="menu_aide">
+        <item>Choisir la question de sécurité 1</item>
+        <item>Quel est le nom de premier animal de compagnie?</item>
+        <item>Quel est le nom de jeune fille de votre mère?</item>
+        <item>Quel est votre film préféré?</item>
+    </string-array>
+
+    <string-array name="categories_array">
+        <item>Tous</item>
+        <item>Vêtements</item>
+        <item>Électronique</item>
+        <item>Sport</item>
+        <item>Éducation</item>
+        <item>Accessoires</item>
+        <item>Décorations</item>
+        <item>Santé et beauté</item>
+    </string-array>
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    tools:context=".activites.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_en_tete_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6.5"
+        android:background="@drawable/border_top"
+        android:backgroundTint="@color/black"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_shop_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:text="@string/shop"
+                style="@style/ShopTextViewStyle" />
+
+            <ImageView
+                android:id="@+id/iv_shop_and_sell_logo_main"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.2"
+                android:contentDescription="@string/logo_de_shop_and_sell"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/txt_sell_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:text="@string/sell"
+                style="@style/SellTextViewStyle" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="370dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white" />
+
+        <HorizontalScrollView
+            android:id="@+id/hsv_btn_categories"
+            android:layout_width="370dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/scroll_horizontal_categories_boutons">
+
+            <LinearLayout
+                android:id="@+id/ll_btn_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/body_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titre_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Produit en rabais"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/produit_rabais"
+                android:layout_width="370dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/titre_zone_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Nos suggestion"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/produit_suggestion"
+                android:layout_width="370dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/titre_zone_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="À découvrir"
+                android:textSize="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/produit_decouvrir"
+                android:layout_width="370dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_accueil_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="Home Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home_clicked" />
+
+        <ImageButton
+            android:id="@+id/btn_ajouter_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="Add Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add" />
+
+        <ImageButton
+            android:id="@+id/btn_utilisateur_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="User Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user" />
+
+    </LinearLayout>
+
+</LinearLayout>

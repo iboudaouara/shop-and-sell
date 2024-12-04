@@ -1,0 +1,354 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #131a22;
+    color: white;
+    padding: 20px 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box; /* Ajouté pour s'assurer que le padding est inclus dans la largeur totale */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.img_logo {
+    height: 20px;
+    width: 20%;
+    margin-top: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: rgb(100, 165, 72);
+    color: #000;
+    cursor: pointer;
+}
+
+.header-links {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    text-align: right;
+}
+
+
+.profile-header {
+    background-color: #111;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main {
+    /*background-color: rgb(226, 241, 252);*/
+    flex: 1;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: rgb(226, 241, 252);
+}
+
+.card img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 3px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+   /* margin-bottom: 20px;*/
+    flex-shrink: 0;
+   /* margin-top: 10%;
+    margin-left: 0;*/
+}
+
+.card h1, .card h2 {
+    width: 100%;
+    order: -2;
+    margin-bottom: 10px;
+}
+
+/*.card h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: black;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    text-align: left;
+    z-index: 1;
+    align-self: flex-start;
+}*/
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: green;
+    padding-bottom: 10px;
+    /*text-align: left;
+    z-index: 2;
+    align-self: flex-start;*/
+    order: -1;
+}
+
+.card .description {
+
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    color: #494949;
+    text-align: left;
+    /*width: 100%;
+    margin-top: 10%;*/
+}
+
+.card .description li {
+
+    margin: 5px 0;
+}
+
+#seeMore {
+
+    margin-top: 40px;
+}
+
+#seeMore h3 {
+
+    font-size: 1.8em;
+    color: #131a22;
+    margin-bottom: 20px;
+}
+
+.similar-products {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.similar-product-card {
+
+    width: calc(33.33% - 200px);
+    min-width: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.similar-product-card img {
+
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.similar-product-card h1 {
+
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.similar-product-card h2 {
+
+    font-size: 1em;
+    color: green;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.similar-product-card .vendeur {
+
+    font-size: 0.9em;
+    color: #494949;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.similar-product-card h1, 
+.similar-product-card h2, 
+.similar-product-card .vendeur {
+
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.similar-product-card .vendeur {
+    
+    font-size: 0.9em;
+    color: #494949;
+    margin-top: 5px;
+}
+
+.similar-product-card .vendeur a {
+
+    color: #131a22;
+    text-decoration: none;
+}
+
+.similar-product-card .vendeur a:hover {
+
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    .similar-product-card {
+        
+        width: 100%;
+    }
+}
+
+.similar-product-card .description {
+
+    font-size: 0.9em;
+}
+
+.delete-button {
+    position: relative;
+    bottom: 10%;
+    right: 0%;
+    top:0%;
+    background-color: rgba(139, 0, 0, 0.879);
+    color: white;
+    padding: 7px 10px;
+    border: 2px solid bisque; 
+    border-radius: 5px;
+    cursor: pointer;
+    margin-block-start: auto;
+    font-size: 0.9em;
+}
+
+.delete-button:hover {
+    background-color: rgb(117, 0, 0);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#confirmDelete {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#cancelDelete {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+footer {
+    background-color: #131a22;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

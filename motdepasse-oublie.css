@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+header {
+    background-color: #131a22;
+    color: white;
+    padding: 20px 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box; /* Ajouté pour s'assurer que le padding est inclus dans la largeur totale */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.img_logo {
+    height: 20px;
+    width: 20%;
+    margin-top: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: rgb(100, 165, 72);
+    color: #000;
+    cursor: pointer;
+}
+
+.header-links {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    text-align: right;
+}
+
+
+.profile-header {
+    background-color: #111;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+
+
+main {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    background-color: #e3f2fd;
+
+}
+
+
+
+.motdepasse-oublie {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px; 
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+form button {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:active {
+    transform: scale(0.95);
+}
+
+form button:focus {
+    outline: none;
+}
+
+#message {
+    margin-top: 20px;
+    color: red;
+}
+
+footer {
+    background-color: #131a22;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+    }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .search-bar, .header-links-container {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .search-bar {
+        flex: 1;
+        order: 1;
+    }
+
+    .header-links-container {
+        order: 2;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+
+    .header-links {
+        margin: 5px 0;
+    }
+
+    form {
+        padding: 20px;
+    }
+}

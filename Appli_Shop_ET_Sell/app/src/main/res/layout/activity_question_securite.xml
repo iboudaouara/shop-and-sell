@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activites.QuestionSecuriteActivity">
+
+    <LinearLayout
+        android:id="@+id/llPourLogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7.5"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtShopCreerCompte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/shop"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivLogoInscription"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:contentDescription="@string/logoshopsell"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/txtSellCreerCompte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/sell"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFormulaireInscription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtInscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="90dp"
+            android:text="Questions de sécurité"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#546E7A"
+            android:textSize="40sp" />
+
+        <Spinner
+            android:id="@+id/spinnerQuestion1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtQuestion1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:autofillHints="givenName"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="Question de sécurité 1"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColorHint="#546E7A" />
+
+        <Spinner
+            android:id="@+id/spinnerQuestion2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtQuestion2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:autofillHints="givenName"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="Question de sécurité 2"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColorHint="#546E7A" />
+
+
+
+        <Button
+            android:id="@+id/btnConfimerChoix"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:backgroundTint="#000000"
+            android:text="@string/confirmer_mes_choix"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPourNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnAccueilSinscrire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/btnaccueil"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/btnAjouterSinscrire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/btnajouter"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add" />
+
+        <ImageButton
+            android:id="@+id/btnUtilisateurSinscrire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/btnutilisateur"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user_clicked" />
+    </LinearLayout>
+
+</LinearLayout>

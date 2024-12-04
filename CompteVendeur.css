@@ -1,0 +1,407 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #131a22;
+    color: white;
+    padding: 20px 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box; /* Ajouté pour s'assurer que le padding est inclus dans la largeur totale */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.img_logo {
+    height: 24px;
+    margin-top: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: rgb(100, 165, 72);
+    color: #000;
+    cursor: pointer;
+}
+
+.header-links {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    text-align: right;
+}
+
+
+main {
+    padding: 20px;
+    min-height: 100vh;
+    background-color: rgb(226, 241, 252);
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-section {
+    flex: 0 0 300px;
+    max-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.articles-section {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.element {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.list-element {
+    width: 100%;
+}
+
+.profile-card {
+    text-align: center;
+}
+
+/*.profile-header {
+    background-color: #111;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}/*
+
+/* Styles spécifiques à l'image du profil */
+.profile-header {
+    background-color: #0a2c544b;
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+/*.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}*/
+
+.profile-info h2 {
+    margin: 10px 0;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.stat p {
+    margin: 0;
+    text-align: center;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.boutons-profil {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: static;
+}
+
+.favorite.styled.btn-articles:hover,
+.favorite.styled.btn-commentaires:hover {
+    box-shadow: 1px 1px 10px black;
+}
+
+.favorite.styled {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+/*Style pour les commentaires*/
+/* Conteneur des commentaires */
+.comments-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.comments-section {
+    flex: 0 0 300px;
+    max-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+/* Conteneur du formulaire de commentaire */
+#commentFormContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* En-tête du formulaire de commentaire */
+#commentFormContainer h4 {
+    margin-top: 0;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+/* Champ de texte du commentaire */
+#commentText {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: none;
+    box-sizing: border-box;
+}
+
+#commentText:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Boutons */
+#commentFormContainer button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0;
+    align-self: flex-start; /* Aligne les boutons à gauche du conteneur */
+    font-size: 10px;
+}
+
+.add-com {
+    background-color: #28a745;
+}
+
+.add-com:hover {
+    background-color: #218838;
+}
+
+.delete-com {
+    background-color: #dc3545;
+}
+
+.delete-com:hover {
+    background-color: #c82333;
+}
+
+a{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+li:hover{
+    box-shadow: 1px 1px 10px black;
+}
+
+/*.image-container {
+    margin-right: 20px;
+    overflow: hidden; /* Assurez-vous que les images qui dépassent sont cachées */
+   /* width: 150px; /* Définissez une largeur fixe pour le conteneur */
+   /* height: 140px; /* Définissez une hauteur fixe pour le conteneur */
+/*}*/
+
+.image-container {
+    flex: 0 0 150px;
+    margin-right: 20px;
+}
+
+.info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cette propriété permet de conserver les proportions de l'image */
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style-type: none;
+    max-width: 700px;
+}
+
+ul li {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 auto; /* Permet aux éléments de s'adapter à la largeur disponible */
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+    ul li {
+        padding: 8px;
+        margin: 8px 0;
+    }
+}
+
+/* Media query pour les très petits écrans */
+@media (max-width: 480px) {
+    ul li {
+        padding: 5px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .profile-section,
+    .comments-section,
+    .articles-section {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.article-nom{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+.article-description{
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.article-prix{
+    color: green;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    font-weight: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: #131a22;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
